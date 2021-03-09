@@ -17,7 +17,7 @@
     </div>
     <label for="coding-choices">Why is coding cool?</label>
     <div class="choices">
-      <select name="choices">
+      <select name="choices" id="coding-choices">
         <option value="Beacause it's interesting">Beacause it's interesting</option>
         <option value="Beacause it's fun">Beacause it's fun</option>
         <option value="Beacause it's powerful">Beacause it's powerful</option>
@@ -25,17 +25,23 @@
     </div>
     <label for="langauges">Favourite language (choose one)</label>
     <div class="radio-choices">
-      <input type="radio" name="language" value="html" check="checked" /> html
-      <input type="radio" name="language" value="css" check="checked" /> css
-      <input type="radio" name="language" value="Javascript" check="checked" /> Javascript
+      <label for="html">
+        <input type="radio" name="language" id="html" value="html" check="checked" /> html
+      </label>
+      <label for="css">
+        <input type="radio" name="language" id="css" value="css" check="checked" /> css
+      </label>
+      <label for="js">
+        <input type="radio" name="language" id="js" value="Javascript" check="checked" /> Javascript
+      </label>
     </div>
-    <label for="sigining">Would you like to sign up for more information?</label>
+    <label for="sign">Would you like to sign up for more information?</label>
     <div class="check-box">
-      <input type="checkbox" name="signing" id="sigining" value="Sign me up!" /> Sign me up!
+      <input type="checkbox" name="signing" id="sign" value="Sign me up!" /> Sign me up!
     </div>
     <label for="comments">Comments</label>
     <div class="comments">
-          <textarea name="comments" cols="20" row="5"></textarea>
+          <textarea name="comments" id="comments" cols="20" row="5"></textarea>
     </div>
     <input type="submit" value="Submit">
 
