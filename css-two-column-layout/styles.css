@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 200px;
+}
+
+.column-half {
+  display: flex;
+}
+
+p {
+  color: rgb(141, 137, 137);
+  font-family: 'Karla', sans-serif;
+}
+
+.text-container {
+  width: 300px;
+}
+
+img {
+  width: 70px;
+}
+
+h1 {
+  font-family: 'Karla', sans-serif;
+}
+
+h3 {
+  font-family: 'Karla', sans-serif;
+}
+
+.full-column {
+  text-align: center;
+}
+
+.full-column p {
+  width: 600px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  border: solid 2px #bd6949;
+  color: #bd6949;
+}
