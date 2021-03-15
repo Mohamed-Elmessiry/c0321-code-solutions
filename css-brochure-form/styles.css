@@ -1,6 +1,6 @@
 .learn {
   text-align: center;
-  color: rgb(255, 123, 0);
+  color: rgb(240, 60, 60);
   font-family: 'AtlasGrotesk', sans-serif;
 }
 
@@ -20,6 +20,10 @@ form {
   width: 450px;
   background-color: rgb(236, 230, 230);
   font-size: 12px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
 }
 
 label {
@@ -35,6 +39,10 @@ input {
   height: 30px;
   font-size: 12px;
   width: 450px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
 }
 
 select {
