@@ -20,14 +20,17 @@ body {
 img {
   width: 65px;
   height: 65px;
-  border-radius: 50%;
 }
 
 .photo {
   text-align: center;
   background-color: white;
   border-radius: 50%;
-  width: 100px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
