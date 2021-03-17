@@ -1,0 +1,15 @@
+var fullName = 'Mohamed Elmessiry';
+var isCool = false;
+var totalPets = 0;
+console.log('value of fullName:', fullName);
+console.log('value of isCool', isCool);
+console.log('value of totalPets:', totalPets);
+console.log('type of fullName:', typeof fullName);
+console.log('type of isCool: ', typeof isCool);
+console.log('type of totalPets', typeof totalPets);
+var unknown = null;
+console.log('value of unknown:', unknown);
+console.log('type of unkown:', typeof unknown);
+var never;
+console.log('valur of never:', never);
+console.log('type of never:', typeof never);
