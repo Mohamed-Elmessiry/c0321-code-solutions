@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(23, 126, 211);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.column-third {
+  width: calc (100% /3);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 65px;
+  height: 65px;
+}
+
+.photo {
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h3 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  color: rgb(187, 184, 184);
+  font-family: 'lato', sans-serif;
+  font-size: 14px;
+  width: 250px;
+}
+
+.first-row {
+  text-align: center;
+}
