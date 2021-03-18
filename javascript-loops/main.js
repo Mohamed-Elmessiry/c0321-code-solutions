@@ -19,9 +19,10 @@ function getNumbersToTen() {
 
 function getEvenNumbersToTwenty() {
   var evenNumbers = [];
-  for (var i = 2; i <= 20; i += 2) {
+  var i = 2;
+  while (i <= 20) {
     evenNumbers.push(i);
-
+    i += 2;
   }
   return evenNumbers;
 }
@@ -29,9 +30,9 @@ function getEvenNumbersToTwenty() {
 function repeatWord(word, times) {
   var count = 1;
   var repeated = '';
-  for (var i = count; i < times; i++) {
-    repeated += word;
+  while (count < times) {
     count++;
+    repeated += word;
   }
   return repeated;
 }
