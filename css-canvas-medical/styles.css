@@ -52,9 +52,9 @@ li {
   text-align: center;
   background-image: url(./images/hero.jpg);
   background-repeat: no-repeat;
-  background-size: 720px 700px;
-  width: calc(100% / 2);
-  height: 1000px;
+  background-size: cover;
+  width: 1100px;
+  height: 600px;
 }
 
 .gap {
@@ -68,7 +68,7 @@ li {
 }
 
 .empty-space {
-  width: calc(100% / 5);
+  width: 160px;
 }
 
 h2 {
