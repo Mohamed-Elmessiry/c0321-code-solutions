@@ -40,7 +40,7 @@ li {
 }
 
 #contact {
-  background-color: rgb(45, 45, 147);
+  background-color: rgb(68, 78, 127);
   color: white;
 }
 
@@ -50,11 +50,11 @@ li {
 
 .hero-container {
   text-align: center;
-  background-image: url(./images/hero.jpg);
+  background: linear-gradient(rgba(134, 134, 134, 0.5), rgba(57, 57, 57, 0.5)), url(./images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 1100px;
-  height: 600px;
+  height: 500px;
 }
 
 .gap {
@@ -71,14 +71,155 @@ li {
   width: 160px;
 }
 
-h2 {
+.main-container h2 {
   color: white;
 }
 
-p {
+.main-container p {
   color: white;
 }
 
 .text {
-  width: 300px;
+  width: 500px;
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.started {
+  color: white;
+  background-color: rgb(68, 78, 127);
+  display: block;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  align-content: center;
+  font-size: 20px;
+  padding-top: 9px;
+}
+
+.a-empty {
+  height: 150px;
+}
+
+.clinics {
+  background-color: rgb(240, 240, 240);
+  color: #8a7d7d;
+}
+
+.clinics-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Tiempos Headline', sans-serif;
+}
+
+.clinics-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.clinics p {
+  font-family: 'Avenir', sans-serif;
+  font-size: 13px;
+}
+
+.clinics h3 {
+  font-family: 'Tiempos Headline', sans-serif;
+}
+
+.ready {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: grey;
+}
+
+.canvas-bottom {
+  background: #625e5e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+.canvas-bottom-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-bottom {
+  width: 120px;
+}
+
+.bottom-links-one ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-links-two ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  color: white;
+}
+
+.bottom-links-one li {
+  color: white;
+  font-size: 15px;
+}
+
+.bottom-links-two li {
+  color: white;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: #f7f5f5;
+}
+
+.footer ul {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  align-content: flex-start;
+  justify-content: flex-start;
+  height: 70px;
+  padding-left: 220px;
+  align-items: center;
+}
+
+.footer ul li {
+  width: 120px;
+}
+
+.canvas-bottom ul li {
+  width: 120px;
+  font-size: 15px;
+}
+
+.footer-li {
+  font-size: 15px;
+  color: grey;
+}
+
+.h-text {
+  line-height: 0.5;
+}
+
+.logo-white {
+  height: 50px;
+}
+
+.ready-text h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+}
+
+.ready-text p {
+  font-family: 'Tiempos Headline', sans-serif;
 }
