@@ -1,16 +1,16 @@
 var lightSwitchOn = false;
 
-var con = document.querySelector('.container');
-var cir = document.querySelector('.circle');
-cir.addEventListener('click', function () {
+var containerSelector = document.querySelector('.container');
+var circleSelector = document.querySelector('.circle');
+circleSelector.addEventListener('click', function () {
   if (lightSwitchOn === false) {
     lightSwitchOn = true;
-    con.className = 'containerOn';
-    cir.className = 'circleOn';
+    containerSelector.className = 'containerOn';
+    circleSelector.className = 'circleOn';
 
   } else if (lightSwitchOn === true) {
     lightSwitchOn = false;
-    con.className = 'container';
-    cir.className = 'circle';
+    containerSelector.className = 'container';
+    circleSelector.className = 'circle';
   }
 });
