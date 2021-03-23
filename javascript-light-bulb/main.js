@@ -1,15 +1,15 @@
-var lightSwithch = false;
+var lightSwitchOn = false;
 
 var con = document.querySelector('.container');
 var cir = document.querySelector('.circle');
 cir.addEventListener('click', function () {
-  if (lightSwithch === false) {
-    lightSwithch = true;
+  if (lightSwitchOn === false) {
+    lightSwitchOn = true;
     con.className = 'containerOn';
     cir.className = 'circleOn';
 
-  } else if (lightSwithch === true) {
-    lightSwithch = false;
+  } else if (lightSwitchOn === true) {
+    lightSwitchOn = false;
     con.className = 'container';
     cir.className = 'circle';
   }
