@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 800px;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  text-align: center;
+}
+
+.containerOn {
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  height: 800px;
+  align-items: center;
+}
+
+.circleOn {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  text-align: center;
+}
