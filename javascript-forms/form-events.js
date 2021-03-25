@@ -18,5 +18,11 @@ var emailInput = document.getElementById('user-email');
 var textArea = document.getElementById('user-message');
 
 nameInput.addEventListener('focus', handleFocus);
+nameInput.addEventListener('blur', handleBlur);
+nameInput.addEventListener('input', handleInput);
+emailInput.addEventListener('focus', handleFocus);
 emailInput.addEventListener('blur', handleBlur);
+emailInput.addEventListener('input', handleInput);
+textArea.addEventListener('focus', handleFocus);
+textArea.addEventListener('blur', blur);
 textArea.addEventListener('input', handleInput);
