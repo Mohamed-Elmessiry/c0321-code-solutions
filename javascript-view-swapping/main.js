@@ -12,13 +12,14 @@ function swap(event) {
       }
 
     }
-  }
-  var attr = event.target.getAttribute('data-view');
-  for (var k = 0; k < views.length; k++) {
-    if (views[k].getAttribute('data-view') !== attr) {
-      views[k].className = 'view hidden';
-    } else {
-      views[k].className = 'view';
+    var attr = event.target.getAttribute('data-view');
+    for (var k = 0; k < views.length; k++) {
+      if (views[k].getAttribute('data-view') !== attr) {
+        views[k].className = 'view hidden';
+      } else {
+        views[k].className = 'view';
+      }
     }
   }
+
 }
