@@ -1,13 +1,11 @@
 /* exported capitalizeWords */
-function capitalizeWords(word) {
-  var js = ['J', 'A', 'V', 'A', 'S', 'C', 'R', 'I', 'T', 'j', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't'];
-  var small = word.toLowerCase();
-  var string = small[0].toUpperCase() + small.slice(1);
-  for (var i = 0; i < word.length; i++) {
-    if (word[i] === js[i]) {
-      return 'JavaScript';
-    }
-  }
-  return string;
+function capitalizeWords(string) {
+  var k = [];
+  var divide = string.split(' ');
 
+  for (var i = 0; i < divide.length; i++) {
+    k.push(divide[i].slice(0, 1).toUpperCase() + divide[i].slice(1).toLowerCase());
+  }
+  var newString = k.join(' ');
+  return newString;
 }
