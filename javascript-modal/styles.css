@@ -32,8 +32,12 @@
   background: white;
   display: flex;
   flex-direction: column;
+}
 
-  /* display: none; */
+.modal-none {
+  background: white;
+  display: none;
+  flex-direction: column;
 }
 
 .modal-active {
