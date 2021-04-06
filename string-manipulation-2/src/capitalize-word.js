@@ -1,4 +1,5 @@
 /* exported capitalizeWord */
+
 function capitalizeWord(string) {
   var divide = string.split(' ');
   var empty = '';
