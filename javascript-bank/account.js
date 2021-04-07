@@ -6,7 +6,7 @@ function Account(number, holder) {
 }
 
 Account.prototype.deposit = function (amount) {
-  if (amount > 0) {
+  if (amount > 0 && amount % 1 === 0) {
     var deposit = new Transaction('deposit', amount);
     this.transactions.push(deposit);
     return true;
@@ -15,7 +15,7 @@ Account.prototype.deposit = function (amount) {
 };
 
 Account.prototype.withdraw = function (amount) {
-  if (amount > 0) {
+  if (amount > 0 && amount % 1 === 0) {
     var withdraw = new Transaction('withdrawal', amount);
     this.transactions.push(withdraw);
     return true;
