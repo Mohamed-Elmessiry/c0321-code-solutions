@@ -1,7 +1,8 @@
 .learn {
   text-align: center;
-  color: #ff711c;
+  color: #e06427;
   font-family: 'AtlasGrotesk', sans-serif;
+  font-weight: 600;
 }
 
 .label-container {
@@ -43,6 +44,7 @@ input {
   border-left-width: 1px;
   border-bottom-width: 1px;
   border-right-width: 1px;
+  border-color: #e6dcdc;
 }
 
 select {
@@ -59,7 +61,6 @@ select {
   background-color: #e66437;
   color: white;
   margin-top: 10px;
-  margin-left: 350px;
   border-radius: 100px;
   font-weight: 300;
   width: 90px;
