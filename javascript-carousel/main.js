@@ -32,16 +32,19 @@ buttonFive.addEventListener('click', function (event) {
   image.src = images[4];
 });
 
+var indexString = '';
+indexString += image.src;
+var indexStringModified = '.' + indexString.slice(75);
+var index = images.indexOf(indexStringModified);
+
 var previousButton = document.querySelector('.fa-angle-left');
 previousButton.addEventListener('click', function () {
   for (var i = 0; i < images.length; i++) {
-
-    if (image.src === images[0]) {
-      image.src = images[images.length - 1];
+    if (images[index] !== images[0]) {
+      image.src = images[index - 1];
     } else {
-
-      image.src = images[i - 1];
+      image.src = images[4];
     }
-
   }
+
 });
