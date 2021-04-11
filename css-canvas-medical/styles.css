@@ -143,6 +143,7 @@ li {
   flex-direction: row;
   justify-content: space-around;
   padding-top: 60px;
+  height: 400px;
 }
 
 .canvas-bottom-right {
@@ -171,11 +172,13 @@ li {
 .bottom-links-one li {
   color: white;
   font-size: 15px;
+  text-align: left;
 }
 
 .bottom-links-two li {
   color: white;
   font-size: 15px;
+  text-align: left;
 }
 
 .footer {
