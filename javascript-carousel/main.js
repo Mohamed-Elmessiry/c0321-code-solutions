@@ -1,9 +1,9 @@
 var images = [];
-images[0] = '/Users/osamaelmessiry/repos/c0321-code-solutions/javascript-carousel/images/001.png';
-images[1] = '/Users/osamaelmessiry/repos/c0321-code-solutions/javascript-carousel/images/004.png';
-images[2] = '/Users/osamaelmessiry/repos/c0321-code-solutions/javascript-carousel/images/007.png';
-images[3] = '/Users/osamaelmessiry/repos/c0321-code-solutions/javascript-carousel/images/025.png';
-images[4] = '/Users/osamaelmessiry/repos/c0321-code-solutions/javascript-carousel/images/039.png';
+images[0] = './images/001.png';
+images[1] = './images/004.png';
+images[2] = './images/007.png';
+images[3] = './images/025.png';
+images[4] = './images/039.png';
 
 var image = document.querySelector('.image');
 
@@ -32,15 +32,27 @@ buttonFive.addEventListener('click', function (event) {
   image.src = images[4];
 });
 
-var index = 5;
+var index = 4;
 
 var previousButton = document.querySelector('.fa-angle-left');
 previousButton.addEventListener('click', function () {
   if (index === 0) {
-    image.src = images[4];
+    index = images.length - 1;
+    image.src = images[index];
   } else {
     index--;
     image.src = images[index];
   }
 
+});
+
+var nextButton = document.querySelector('.fa-angle-right');
+nextButton.addEventListener('click', function () {
+  if (index < images.length - 1) {
+    index++;
+    image.src = images[index];
+  } else {
+    index = 0;
+    image.src = images[index];
+  }
 });
