@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(241, 241, 241);
+  font-family: 'Barlow', sans-serif;
+}
+
+.explanation {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  width: 100px;
+}
+
+.primary {
+  width: 250px;
+}
+
+.phone {
+  text-align: center;
+}
