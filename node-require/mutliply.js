@@ -1,7 +1,6 @@
-// function multiply(a, b) {
-//   const num1 = Number(a);
-//   const num2 = Number(b);
-//   return num1 * num2
-// }
+function multiply(a, b) {
 
-// module.exports = multiply;
+  return a * b;
+}
+
+module.exports = multiply;
