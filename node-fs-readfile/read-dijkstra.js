@@ -1,3 +1,6 @@
-// const fs = require('fs');
+const fs = require('fs');
 
-// fs.readFile(filename, )
+fs.readFile('dijkstra.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  console.log(data);
+});
