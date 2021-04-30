@@ -19,23 +19,25 @@
     author,
     libraryID
   } = book1;
-  console.log(`The title of the book is ${title}, the author is ${author}, and the libary id is ${libraryID}`);
+
+  const bookOneDescription = (`The title of the book is ${title}, the author is ${author}, and the libary id is ${libraryID}`);
+  console.log(bookOneDescription);
 
   const book2 = {
-    titleTwo: 'Les Fleurs du mal',
-    authorTwo: 'Charles Baudelaire',
-    libraryIDTwo: 2345
+    title: 'Les Fleurs du mal',
+    author: 'Charles Baudelaire',
+    libraryID: 2345
   };
 
   const {
-    titleTwo,
-    authorTwo,
-    libraryIDTwo
-  } = book2;
-  console.log(`The title of the book is ${titleTwo}, the author of the book is ${authorTwo}, and the libary id is ${libraryIDTwo}`);
+    title: book2title,
+    author: book2author,
+    libraryID: book2libaryID
+} = book2;
 
-  function Getlibrary() {
-    const libary =
+  console.log(`The title of the book is ${book2title}, the author of the book is ${book2author}, and the libary id is ${book2libaryID}`);
+
+  const libary =
     [
       {
         title: 'The Road Ahead',
@@ -58,22 +60,15 @@
         libraryID: 1233
       }
     ];
-    return libary;
-}
 
-  const getBook = Getlibrary();
-
-  const book3 = getBook[0];
-  const book4 = getBook[1];
-  const book5 = getBook[2];
+  const [book3, book4, book5] = libary;
 
   console.log('book3:', book3);
   console.log('book4:', book4);
   console.log('book5:', book5);
 
-  const { 3: book6 } = Getlibrary();
-
-console.log('book6:', book6);
+  const [, , , book6] = libary;
+  console.log('book6: ', book6);
 </script>
 </body>
 </html>
