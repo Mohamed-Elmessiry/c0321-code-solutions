@@ -1,47 +1,45 @@
-var images = [];
-images[0] = './images/001.png';
-images[1] = './images/004.png';
-images[2] = './images/007.png';
-images[3] = './images/025.png';
-images[4] = './images/039.png';
+
+var images = ['./images/001.png', './images/004.png', './images/007.png', './images/025.png', './images/039.png'];
 
 var image = document.querySelector('.image');
 
 var buttonOne = document.querySelector('.cone');
-buttonOne.addEventListener('click', function (event) {
-  image.src = images[0];
-});
 
 var buttonTwo = document.querySelector('.ctwo');
-buttonTwo.addEventListener('click', function (event) {
-  image.src = images[1];
-});
 
 var buttonThree = document.querySelector('.cthree');
-buttonThree.addEventListener('click', function (event) {
-  image.src = images[2];
-});
 
 var buttonFour = document.querySelector('.cfour');
-buttonFour.addEventListener('click', function (event) {
-  image.src = images[3];
-});
 
 var buttonFive = document.querySelector('.cfive');
-buttonFive.addEventListener('click', function (event) {
-  image.src = images[4];
-});
 
-var index = 4;
+var buttons = [buttonOne, buttonTwo, buttonThree, buttonFour, buttonFive];
+
+function updateCarousel(newIndex) {
+
+  image.src = images[newIndex];
+  for (var i = 0; i < buttons.length; i++) {
+    if (i === newIndex) {
+      buttons[i].className = 'fas fa-circle';
+    } else {
+      buttons[i].className = 'far fa-circle';
+    }
+  }
+
+}
+
+var index = 0;
 
 var previousButton = document.querySelector('.fa-angle-left');
 previousButton.addEventListener('click', function () {
   if (index === 0) {
     index = images.length - 1;
     image.src = images[index];
+    updateCarousel(index);
   } else {
     index--;
     image.src = images[index];
+    updateCarousel(index);
   }
 
 });
@@ -51,8 +49,26 @@ nextButton.addEventListener('click', function () {
   if (index < images.length - 1) {
     index++;
     image.src = images[index];
+    updateCarousel(index);
   } else {
     index = 0;
     image.src = images[index];
+    updateCarousel(index);
+  }
+});
+
+setInterval(() => {
+
+  index++;
+  if (index === 5) {
+    index = 0;
+  }
+  updateCarousel(index);
+}, 3000);
+
+var cirlesHolder = document.querySelector('.radio-button');
+cirlesHolder.addEventListener('click', function () {
+  for (var i = 0; i < buttons.length; i++) {
+    // console.log(event.target);
   }
 });

@@ -27,3 +27,14 @@
   text-align: center;
   font-size: 30px;
 }
+
+.fa-circle {
+  border-radius: 12px;
+  color: black;
+}
+
+.fa-circle-white {
+  border-radius: 12px;
+  color: white;
+  border: solid black;
+}
