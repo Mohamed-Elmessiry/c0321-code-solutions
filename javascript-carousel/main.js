@@ -69,6 +69,8 @@ setInterval(() => {
 var cirlesHolder = document.querySelector('.radio-button');
 cirlesHolder.addEventListener('click', function () {
   for (var i = 0; i < buttons.length; i++) {
-    // console.log(event.target);
+    if (event.target === buttons[i]) {
+      updateCarousel(i);
+    }
   }
 });
