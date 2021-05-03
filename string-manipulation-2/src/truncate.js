@@ -1,12 +1,12 @@
 /* exported truncate */
 function truncate(length, string) {
-  var nstring = '';
+  var newString = '';
   for (var i = 0; i < length; i++) {
     if (string.length < length) {
       return string + '...';
     } else {
-      nstring += string[i];
+      newString += string[i];
     }
   }
-  return nstring + '...';
+  return newString + '...';
 }
