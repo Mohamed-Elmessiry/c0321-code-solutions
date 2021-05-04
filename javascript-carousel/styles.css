@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  direction: row;
+  align-items: center;
+  width: 80%;
+  border: solid;
+}
+
+.photo {
+  width: calc(100% / 0.8);
+  text-align: center;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+.previous {
+  width: calc(100% / 6);
+  text-align: center;
+  font-size: 30px;
+}
+
+.next {
+  width: calc(100% / 6);
+  text-align: center;
+  font-size: 30px;
+}
+
+.fa-circle {
+  border-radius: 12px;
+  color: black;
+}
+
+.fa-circle-white {
+  border-radius: 12px;
+  color: white;
+  border: solid black;
+}
