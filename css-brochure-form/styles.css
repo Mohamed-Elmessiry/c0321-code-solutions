@@ -1,0 +1,88 @@
+.learn {
+  text-align: center;
+  color: #e06427;
+  font-family: 'AtlasGrotesk', sans-serif;
+  font-weight: 600;
+}
+
+.label-container {
+  width: 490px;
+  margin: auto;
+}
+
+form {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: bold;
+  width: 450px;
+  color: black;
+}
+
+#engineers {
+  width: 450px;
+  background-color: rgb(236, 230, 230);
+  font-size: 12px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+}
+
+label {
+  font-size: 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+input {
+  border-radius: 5px;
+  border-style: solid;
+  height: 30px;
+  font-size: 12px;
+  width: 450px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-color: #e6dcdc;
+}
+
+select {
+  border-radius: 5px;
+  height: 30px;
+  font-size: 8px;
+  border-style: solid;
+}
+
+.submit-box {
+  text-align: right;
+}
+
+.submit {
+  background-color: #e66437;
+  color: white;
+  margin-top: 10px;
+  border-radius: 100px;
+  font-weight: 300;
+  width: 90px;
+  font-size: 12px;
+  border-style: solid;
+}
+
+.email-label {
+  line-height: 1.5;
+}
+
+.name-label {
+  line-height: 1.5;
+}
+
+.hiring {
+  line-height: 1.5;
+}
+
+.engineers {
+  line-height: 1.5;
+}
