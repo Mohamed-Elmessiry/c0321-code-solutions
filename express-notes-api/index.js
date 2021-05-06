@@ -70,7 +70,6 @@ app.post('/api/notes', function (req, res) {
 //         }
 
 //     }
-//   }
 
 //   // res.status(404).send({ error: 'ID is not valid' });
 // });
