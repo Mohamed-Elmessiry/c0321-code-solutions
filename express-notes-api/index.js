@@ -52,7 +52,7 @@ app.post('/api/notes', function (req, res) {
 
 });
 
-// app.delete('/api/notes', function (req, res) {
+// app.delete('/api/notes/:id', function (req, res) {
 //   const id = req.params.id;
 //   if (id < 0) {
 //     res.status(400).send({ error: 'ID should be a positive integer' });
@@ -68,9 +68,9 @@ app.post('/api/notes', function (req, res) {
 //         if (err) {
 //           res.status(500).send({ error: "An unexpected error occurred."  });
 //         }
-
+//       }
 //     }
-
+//   }
 //   // res.status(404).send({ error: 'ID is not valid' });
 // });
 
