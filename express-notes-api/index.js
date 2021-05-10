@@ -52,27 +52,28 @@ app.post('/api/notes', function (req, res) {
 
 });
 
-// app.delete('/api/notes/:id', function (req, res) {
-//   const id = req.params.id;
-//   if (id < 0) {
-//     res.status(400).send({ error: 'ID should be a positive integer' });
-//   } else if (dataJson.notes[req.pamas.id] === undefined) {
-//     res.status(404).send({ error: 'ID is not valid' });
-//   } else {
-//     let key;
-//     for (key in dataJson) {
-//       delete dataJson.notes[key];
-//       res.status(204).send();
-//       const dataJsonStrignified= JSON.stringify(dataJson, null, 2)
-//       fs.writeFile('data.json', dataJsonStrignified, 'utf8', err => {
-//         if (err) {
-//           res.status(500).send({ error: "An unexpected error occurred."  });
-//         }
-//       }
-//     }
-//   }
-//   // res.status(404).send({ error: 'ID is not valid' });
-// });
+app.delete('/api/notes/:id', function (req, res) {
+  const id = req.params.id;
+  if (id < 0) {
+    res.status(400).send({ error: 'ID should be a positive integer' });
+  } else if (dataJson.notes[req.pamas.id] === undefined) {
+    res.status(404).send({ error: 'ID is not valid' });
+  } else {
+    let key;
+    for (key in dataJson) {
+      delete dataJson.notes[key];
+      res.status(204).send();
+      const dataJsonStrignified = JSON.stringify(dataJson, null, 2);
+      fs.writeFile('data.json', dataJsonStrignified, 'utf8', err => {
+        if (err) {
+          res.status(500).send({ error: 'An unexpected error occurred.' });
+        }
+        res.status(404).send({ error: 'ID is not valid' });
+      });
+
+    }
+  }
+});
 
 app.put('/api/notes', function (req, res) {
   const id = req.params.id;
