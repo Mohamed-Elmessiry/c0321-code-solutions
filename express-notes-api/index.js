@@ -53,33 +53,53 @@ app.post('/api/notes', function (req, res) {
 });
 
 app.delete('/api/notes/:id', function (req, res) {
+
   const id = req.params.id;
+
   if (id < 0) {
     res.status(400).send({ error: 'ID should be a positive integer' });
-  } else if (dataJson.notes[req.pamas.id] === undefined) {
+  } else if (typeof dataJson.notes[req.params.id] === 'undefined') {
     res.status(404).send({ error: 'ID is not valid' });
   } else {
-    let key;
-    for (key in dataJson) {
-      delete dataJson.notes[key];
-      res.status(204).send();
-      const dataJsonStrignified = JSON.stringify(dataJson, null, 2);
-      fs.writeFile('data.json', dataJsonStrignified, 'utf8', err => {
-        if (err) {
-          res.status(500).send({ error: 'An unexpected error occurred.' });
-        }
-        res.status(404).send({ error: 'ID is not valid' });
-      });
 
-    }
+    const newObj = dataJson;
+
+    delete newObj.notes[req.params.id];
+
+    fs.writeFile('data.json', JSON.stringify(newObj), 'utf8', err => {
+      if (err) {
+        res.status(500).send({ error: 'An unexpected error occurred.' });
+        return;
+      }
+      res.status(200).send(newObj);
+
+    });
+
   }
 });
 
-app.put('/api/notes', function (req, res) {
+app.put('/api/notes/:id', function (req, res) {
   const id = req.params.id;
   if (id < 0) {
     res.status(400).send({ error: ' id must be a positive integer ' });
+    return;
+  } else if (typeof dataJson.notes[req.params.id] === 'undefined') {
+    res.status(404).send({ error: 'ID is not valid' });
+    return;
   }
+
+  const newObj = dataJson;
+
+  newObj.notes[req.params.id].content = req.body.content;
+
+  fs.writeFile('data.json', JSON.stringify(newObj), 'utf8', err => {
+    if (err) {
+      res.status(500).send({ error: 'An unexpected error occurred.' });
+      return;
+    }
+    res.status(200).send(newObj);
+
+  });
 
 });
 
