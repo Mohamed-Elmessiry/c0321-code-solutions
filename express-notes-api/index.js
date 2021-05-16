@@ -21,7 +21,7 @@ app.get('/api/notes/:id', function (req, res) {
   if (id < 0) {
     res.status(400).send({ error: ' id must be a positive integer ' });
   } else if (dataJson.notes[id] === undefined) {
-    res.status(400).send({ error: 'couldt find the id' });
+    res.status(404).send({ error: 'could not find the id' });
   } else {
     res.status(200).send(dataJson.notes[id]);
   }
@@ -42,7 +42,7 @@ app.post('/api/notes', function (req, res) {
     const dataJsonStrignified = JSON.stringify(dataJson, null, 2);
     fs.writeFile('data.json', dataJsonStrignified, 'utf8', err => {
       if (err) {
-        res.status(400).send({ error: 'An unexpected error occurred.' });
+        res.status(500).send({ error: 'An unexpected error occurred.' });
       }
     });
 
@@ -71,7 +71,7 @@ app.delete('/api/notes/:id', function (req, res) {
         res.status(500).send({ error: 'An unexpected error occurred.' });
         return;
       }
-      res.status(200).send(newObj);
+      res.status(204).send(newObj);
 
     });
 
