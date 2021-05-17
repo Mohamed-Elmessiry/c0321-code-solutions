@@ -1,0 +1,35 @@
+.on {
+  background-color: green;
+  height: 30px;
+  width: 60px;
+  border-radius: 42%;
+}
+
+.off {
+  background-color: grey;
+  height: 30px;
+  width: 60px;
+  border-radius: 42%;
+}
+
+.switchOff {
+  height: 30px;
+  border-radius: 50%;
+  width: 35px;
+}
+
+.switchOn {
+  height: 30px;
+  border-radius: 50%;
+  width: 35px;
+  margin-left: 26px;
+}
+
+.button-holder {
+  display: flex;
+}
+
+.text {
+  margin-left: 10px;
+  margin-top: 10px;
+}
