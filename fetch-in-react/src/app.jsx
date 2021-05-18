@@ -14,7 +14,7 @@ class App extends React.Component {
     /* your code here */
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
-      .then(users => this.setState({ isloading: false, users: users }));
+      .then(users => this.setState({ isLoading: false, users: users }));
   }
 
   render() {
