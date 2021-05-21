@@ -4,7 +4,7 @@ const app = express();
 const fs = require('fs');
 const dataJson = require('./data.json');
 
-let nextID = 10;
+let nextID = dataJson.nextId;
 
 app.get('/api/notes', function (req, res) {
   let key;
