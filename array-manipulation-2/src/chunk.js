@@ -1,15 +1,17 @@
 /* exported chunk */
+
 function chunk(array, size) {
-  var newArray = [];
+  var resultArray = [];
   var subArray = [];
   for (var i = 0; i < array.length; i++) {
-    if (array[i] === newArray[i]) {
-      return newArray;
-    } else {
-      subArray.push(array[i]);
-
+    subArray.push(array[i]);
+    if (subArray.length === size) {
+      resultArray.push(subArray);
+      subArray = [];
     }
-    newArray.push(subArray);
   }
-  return newArray;
+  if (subArray.length > 0) {
+    resultArray.push(subArray);
+  }
+  return resultArray;
 }
