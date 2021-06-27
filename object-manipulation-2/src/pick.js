@@ -1,6 +1,11 @@
 /* exported pick */
-function pick(key1, key2) {
-  // for (var key in obj) {
+function pick(source, keys) {
+  var pickedObject = {};
+  for (var property in source) {
+    if (keys.includes(property) && source[property] !== undefined) {
+      pickedObject[property] = source[property];
+    }
+  }
+  return pickedObject;
 
-  // }
 }
