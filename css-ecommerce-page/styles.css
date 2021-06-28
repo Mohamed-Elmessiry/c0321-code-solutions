@@ -1,0 +1,37 @@
+body {
+  font-family: DM Sans, sans-serif;
+}
+
+h1 {
+  color: black;
+  font-family: DM Sans, sans-serif;
+}
+
+span {
+  color: rgb(210, 210, 207);
+}
+
+.images {
+  display: flex;
+}
+
+.column {
+  flex-basis: calc(100% / 5);
+}
+
+.title {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+
+.price {
+  background-color: #ea9e85;
+  color: black;
+}
+
+.container {
+  text-align: center;
+}
