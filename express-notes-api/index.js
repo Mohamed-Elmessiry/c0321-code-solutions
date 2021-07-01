@@ -34,15 +34,18 @@ app.post('/api/notes', function (req, res) {
 
   if (req.body.content !== undefined) {
 
+    req.body.id = nextID;
+    dataJson.notes[nextID] = req.body;
+    nextID++;
+
     const dataJsonStrignified = JSON.stringify(dataJson, null, 2);
     fs.writeFile('data.json', dataJsonStrignified, 'utf8', err => {
       if (err) {
         res.status(500).send({ error: 'An unexpected error occurred.' });
       } else {
-        req.body.id = nextID;
-        dataJson.notes[nextID] = req.body;
+
         res.status(201).json(req.body);
-        nextID++;
+
       }
     });
 
